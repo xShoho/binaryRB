@@ -3,10 +3,10 @@ require './src/utils.rb'
 
 STACK = Stack.new()
 
-Selection menu
+# Selection menu
 while true
     puts "Give fixed decimal number:"
-    decValue = gets
+    decValue = gets.chomp
     begin
         decValue = Integer(decValue)
         isNegative = checkIfNegative(decValue)
@@ -17,10 +17,7 @@ while true
 
         STACK.add("[MSB]")
 
-        while decValue != 0
-            STACK.add((decValue % 2).to_s)
-            decValue /= 2
-        end
+        toBinaryAndAddToStack(decValue, STACK)
 
         if isNegative
             STACK.add("1")
@@ -43,6 +40,6 @@ while true
             break
         end
     rescue
-        puts "It has to be a number!!!\n"
+        puts "It has to be a number!!!\n\n"
     end
 end
