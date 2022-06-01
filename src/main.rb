@@ -25,15 +25,11 @@ while true
             STACK.add("0")
         end
 
-        binValue = ""
-        while STACK.elements != 0
-            binValue += STACK.top.value
-            STACK.release()
-        end
+        binValue = resolveStack(STACK)
 
         puts "Result: #{ binValue }"
 
-        puts "\nContinue? [Y/N]"
+        puts "\nInsert [N/n] if You want to stop:"
         res = gets.chomp.downcase
 
         if res.eql?('n')

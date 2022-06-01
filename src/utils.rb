@@ -12,3 +12,14 @@ def toBinaryAndAddToStack(number, stack)
         number /= 2
     end
 end
+
+def resolveStack(stack)
+    resString = ""
+
+    while stack.elements != 0
+        resString += stack.top.value
+        stack.release()
+    end
+
+    return resString
+end
