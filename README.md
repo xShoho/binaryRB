@@ -7,7 +7,7 @@ During my studies I noticed that conversion from Decimal to Binary works like St
 To convert decimal number to binary we will divide the number by 2 until it reaches 0 and remember the rest of the division.
 
 For example
-To convert number 206~10~ to binary we create table:
+To convert number 206<sub>10</sub> to binary we create table:
 | Decimal value / 2 | division result | Rest of the Division |
 | ----------- | ----------- | ----------- |
 | 206 / 2 | 103 | 0 |
@@ -21,3 +21,5 @@ To convert number 206~10~ to binary we create table:
 
 Now We take this last column and write the numbers in reverse order.
 So it will be **11001110<sub>2</sub>**
+
+Result: 206<sub>10</sub> = 11001110<sub>2</sub>
