@@ -20,4 +20,4 @@ To convert number 206~10~ to binary we create table:
 | 1 / 2 | 0 | 1 |
 
 Now We take this last column and write the numbers in reverse order.
-So it will be ==11001110~2~==
+So it will be **11001110<sub>2</sub>**
