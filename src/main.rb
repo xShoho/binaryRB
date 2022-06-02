@@ -4,7 +4,8 @@ require './src/utils.rb'
 STACK = Stack.new()
 
 # Selection menu
-while true
+while runCalculator()
+
     puts "Give fixed decimal number:"
     decValue = gets.chomp
     begin
@@ -28,13 +29,6 @@ while true
         binValue = resolveStack(STACK)
 
         puts "Result: #{ binValue }"
-
-        puts "\nInsert [N/n] if You want to stop:"
-        res = gets.chomp.downcase
-
-        if res.eql?('n')
-            break
-        end
     rescue
         puts "It has to be a number!!!\n\n"
     end

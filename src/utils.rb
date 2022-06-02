@@ -23,3 +23,10 @@ def resolveStack(stack)
 
     return resString
 end
+
+def runCalculator()
+    puts "\nInsert [Y/y] to calculate dec to bin:"
+    res = gets.chomp.downcase
+
+    return res.eql?('y')
+end
